@@ -1,0 +1,7 @@
+{
+  "name": "ultimeTarea",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
