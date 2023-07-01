@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>wordpress</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let news of wordpressNews">
+    <ion-img [src]="news.image" alt="News Image"></ion-img>
+    <ion-card-header>
+      <ion-card-title>{{ news.title }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{ news.summary }}</p>
+      <a [href]="news.link" target="_blank">Read More</a>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
